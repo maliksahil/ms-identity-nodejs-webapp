@@ -1,0 +1,10 @@
+<% if (!user) { %>
+	<h2>Welcome! Please log in.</h2>
+	<a href="/login">Log In</a>
+<% } else { %>
+<h1>Account Info</h1>
+<pre>
+<%- JSON.stringify(user, null, 2) %>
+</pre>
+<a href="/logout">Log Out</a>
+<% } %>

@@ -1,0 +1,7 @@
+<% if (body) { %>
+<pre>
+<%- JSON.stringify(JSON.parse(body), null, 2) %>
+<% } else { %>    
+    No body
+</pre>
+<% } %>
